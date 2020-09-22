@@ -15,16 +15,16 @@ nav >.n1{
 }
 
 .img8-1,.img8-2{
-    border: 1px;
+    border: 1px solid slateblue;
     display: flex;
     width: 100%;
     /* height: 80%; */
-    min-width: 1200px;
+    /* min-width: 1200px; */
     min-height: 200px;
 }
 
 .imglist >img{
-    border: 1px;
+    border: 1px solid springgreen;
     width: 100%;
     /* height: 70%; */
     display: block;
