@@ -263,15 +263,15 @@ section.btn{
     margin: 22px 0;
 }
 @media screen and (max-width:576px){    .sale_text1>p{
-        background-color: teal;
+        /* background-color: teal; */
         font-size: 19px;
-        /* margin: 30px; */
+        margin: 15px 0;
 }
     /* .sale_text1{
         height: 50%;
     }       */
     .sale_text2>p{
-        background-color: teal;
+        /* background-color: teal; */
         font-size: 19px;
     }
     .sale_text2{
@@ -286,7 +286,7 @@ section.btn{
         max-height: 57px;
     }
     .sale_block{
-        height: none;
+        height: 50px;
     }
 
 }
