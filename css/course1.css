@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 nav >.n1{
     background-color: #002863;
@@ -8,36 +9,37 @@ nav >.n1{
 }
 
 .imgblock8{
-   border: 1px;
-   display: flex;
+   /* border: 1px solid khaki; */
    width: 100%;
-   flex-direction:column;
+   font-size: 0;
 }
 
-.img8-1,.img8-2{
-    border: 1px solid slateblue;
-    display: flex;
-    width: 100%;
-    /* height: 80%; */
-    /* min-width: 1200px; */
-    min-height: 200px;
-}
 
 .imglist >img{
-    border: 1px solid springgreen;
+    /* border: 1px solid springgreen; */
     width: 100%;
-    /* height: 70%; */
-    display: block;
+    /* margin-bottom: 20px; */
 }
 
 .imglist{
-    width: 100%;
+    width: 25%;
+    display: inline-block;
     text-align: center;
     font-size: 0;
     background-color:#254ca1;
-}    
+}
+@media all and (max-width:768px) {
+    .imglist{
+        width: 50%;  
+    }
+} 
+@media all and (max-width:520px) {
+    .imglist{
+        width: 100%;
+    }
+}     
 .imglist>p{
-    border: 1px;
+    /* border: 1px; */
     color: #ffb81f;
     font-size: 30px;
 }
@@ -45,10 +47,10 @@ nav >.n1{
 .wrap{
     background-color: #F2EEE6;
     width: 100%;
-    min-width: 1200px;
+    /* min-width: 1200px; */
 }
 .content{
-    width: 1200px;
+    width: 100%;
     /* border: 1px solid red; */
     margin: 0 auto;
     background-color: #F2EEE6;
@@ -62,19 +64,78 @@ h4{
 }
 .courseblock{
     /* border: 1px solid brown; */
-    min-width: 1200px;
 
 }
 
 span.courselist{
-    /* border: 1px solid violet; */
+    border: 1px solid violet;
     display: flex;
-    padding:30px 180px;
-    min-width: 1200px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:center
+    /* width: 1000px; */
+    
+    /* min-width: 1200px; */
+}
+@media screen and (max-width:1018px) and (min-width:767px){   
+    span.courselist{
+    /* background-color: firebrick; */
+    width: 50%;
+    margin: 0 auto;
+    }   
+    span>img{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+    }
+    span.text{
+    width: 100px;
+    }
+    span.text>h5{
+    font-size: 20px;
+    }
+    span.text>p{
+    font-size: 16px;
+    }
+}
+@media screen and (max-width:768px){
+    span.courselist{
+        /* background-color: steelblue; */
+        width: 50%;
+        margin: 0 auto;
+    }
+    span>img{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+    }
+    span.text{
+        width: 100px;
+        padding: none;
+    }
+    span.text>h5{
+        font-size: 20px;
+        margin: 0;
+    }
+    span.text>p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:576px){
+    span.text{
+        padding: none;
+        outline: 1px solid yellow;
+    }
+    span.courselist{
+        /* background-color: steelblue; */
+        width: 100%;
+    }
 }
 #img1>img,#img2>img,#img3>img,#img4>img,#img5>img,#img6>img,#img7>img,#img8>img{
     /* border: 1px solid #002863; */
-    width: 70%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
     
 }
 a > p{
@@ -89,16 +150,16 @@ a > p{
     text-decoration: none;
     background-color: #ffb81f;
     color: #ffffff;
-    width: 359px;
+    width: 100%;
     font-size: 0;
     /* height: 60px; */
 }
 
 span.text{
     border: 1px solid #002863;
-    width: 60%;
+    width: 400px;
     padding:20px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 h5{
@@ -112,10 +173,9 @@ p{
 }
 /* 按鈕 */
 .btnsblock{
-    /* border: 1px solid palegreen; */
     display: flex;
-    padding:0px 100px;
-    min-width: 1200px;
+    /* outline: 1px solid red; */
+    margin-top: 10px;
 }
 
 section.btn{
@@ -153,8 +213,11 @@ section.btn> a:hover{
     color: #254ca1;
 }
 span.teacher{
-    padding:0px 500px ;
+    /* padding:0px 500px ; */
     margin-bottom: 50px;
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: column;
 }
 span.teacher >img{
     border: 1px solid #254ca1;
@@ -162,13 +225,28 @@ span.teacher >img{
     height: 200px;
     border-radius: 70%;
     margin: 0 auto;
+    outline: 1px solid red;
+    margin-top: 15px;
 }
 
 .teachertext >p{
     border: 1px solid #002863;
-    width: 35%;
+    width: 400px;
     padding:40px;
     margin: 0 auto;
     line-height: 1.5;
     color: #254ca1;
+    outline: 1px solid red;
+}
+
+@media screen and (max-width:320px){
+    span.text{
+        /* background-color: tomato; */
+        width: 96%;
+    }
+    span.teachertext>p{
+        /* background-color: teal; */
+        width: 96%;
+    }
+
 }
