@@ -5,26 +5,42 @@
 
 .wrap{
     background-color: #F2EEE6;
-    min-width: 1200px;
+    width: 100%;
 }
 
 .content{
     border: 1px solid #002863;
     background-color: #F2EEE6;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
+@media screen and (max-width:320px){
+    .about>.title{
+        /* background-color: darkgoldenrod; */
+        margin: 30px -15px;
+    }
+    h4{
+        margin: 30px 5px;
+    }
+    .about>p{
+        display: inline-block;
+        width: 200px;
+        margin: 0 -50px;
+    }
+}
 
-h3{
+.about>.title{
     font-size: 30px;
+    display: inline-block;
 }
 
 h4{
     font-size: 22px;
 }
 
-p{
+.about > p{
     font-size: 18px;
+    border: 1px solid rebeccapurple;
 }
 
 .about, .local{
@@ -36,16 +52,19 @@ p{
 }
 .local{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    border: 1px solid darkcyan;
 }
+
 
 .locallist,.adimg{
-    /* border: 1px solid forestgreen; */
-    width: 450px;
-}
+    border: 1px solid forestgreen;
+    width: 500px;
+}   
 
 .locallist{
-    padding:30px;
+    /* padding:30px; */
 }
 
 h5{
@@ -57,9 +76,22 @@ h5{
     padding: 12px 0px;
 }
 
+.textblock{
+    border: 1px solid hotpink;
+    background-color: #F2EEE6;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    
+}
 .form{
-    /* border: 1px solid navy; */
-    padding: 0 350px;
+    border: 1px solid navy;
+    background-color: #F2EEE6;
+    
+} 
+
+.text,.tel,.email,textarea{
+    width: 100%;
 }
 
 section.btn{
@@ -70,16 +102,18 @@ section.btn{
     box-sizing: border-box;
     width: 100px;
     height: 45px;
-    transform: skew(-30deg, 0deg) translate(200px);
- }
+    transform: skew(-30deg, 0deg); 
+    /* transform: translateX(200px); */
+    display: inline-block;
+    margin: 20px 130px;
+}
  section a{
-     display: inline-block;
      /* border: 1px solid red; */
      text-decoration: none;
      text-align: center;
      color: #002863;
      font-style: normal;
-     transform: skew(30deg, 0deg)
+     transform: skew(30deg, 0deg);
  }
 
  section a:hover{
@@ -88,4 +122,6 @@ section.btn{
     color: #002863;
     font-style: normal;
  }
+
+ 
  
