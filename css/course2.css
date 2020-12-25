@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+nav >.n1{
+    background-color: #002863;
+    color: #ffffff;
+    margin: 0px 0px;
+}
+
+.imgblock8{
+   /* border: 1px solid khaki; */
+   width: 100%;
+   font-size: 0;
+}
+
+
+.imglist >img{
+    /* border: 1px solid springgreen; */
+    width: 100%;
+    /* margin-bottom: 20px; */
+}
+
+.imglist{
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+    background-color:#254ca1;
+}
+@media all and (max-width:768px) {
+    .imglist{
+        width: 50%;  
+    }
+} 
+@media all and (max-width:520px) {
+    .imglist{
+        width: 100%;
+    }
+}     
+.imglist>p{
+    /* border: 1px; */
+    color: #ffb81f;
+    font-size: 30px;
+}
+
+.wrap{
+    background-color: #F2EEE6;
+    width: 100%;
+    /* min-width: 1200px; */
+}
+.content{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    background-color: #F2EEE6;
+}
+h4{
+    color: #002863;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+    min-height: 10px;
+}
+.courseblock{
+    /* border: 1px solid brown; */
+
+}
+
+span.courselist{
+    border: 1px solid violet;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:center
+    /* width: 1000px; */
+    
+    /* min-width: 1200px; */
+}
+@media screen and (max-width:1018px) and (min-width:767px){   
+    span.courselist{
+    /* background-color: firebrick; */
+    width: 50%;
+    margin: 0 auto;
+    }   
+    span>img{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+    }
+    span.text{
+    width: 100px;
+    }
+    span.text>h5{
+    font-size: 20px;
+    }
+    span.text>p{
+    font-size: 16px;
+    }
+}
+@media screen and (max-width:768px){
+    span.courselist{
+        /* background-color: steelblue; */
+        width: 50%;
+        margin: 0 auto;
+    }
+    span>img{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+    }
+    span.text{
+        width: 100px;
+        padding: none;
+    }
+    span.text>h5{
+        font-size: 20px;
+        margin: 0;
+    }
+    span.text>p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:576px){
+    span.text{
+        padding: none;
+        outline: 1px solid yellow;
+    }
+    span.courselist{
+        /* background-color: steelblue; */
+        width: 100%;
+    }
+}
+#img1>img,#img2>img,#img3>img,#img4>img,#img5>img,#img6>img,#img7>img,#img8>img{
+    /* border: 1px solid #002863; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+a > p{
+    font-size: 30px;
+    color: #ffffff;
+}
+.imglist >a{
+    text-decoration: none;
+    display: block;
+}
+.imglist>a:hover{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffb81f;
+    color: #ffffff;
+    width: 100%;
+    font-size: 0;
+    /* height: 60px; */
+}
+
+span.text{
+    border: 1px solid #002863;
+    width: 400px;
+    padding:20px;
+    margin: 0;
+}
+
+h5{
+    text-align: center;
+    font-size: 25px;
+    color: #254ca1;
+}
+
+p{
+    font-size: 20px;
+}
+/* 按鈕 */
+.btnsblock{
+    display: flex;
+    /* outline: 1px solid red; */
+    margin-top: 10px;
+}
+
+section.btn{
+    text-align: center;
+    border: 1px solid #ffb81f;
+    background-color: #ffb81f;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 45px;
+    transform: skew(-30deg, 0deg);
+    margin: 0 auto;
+ }
+ section.btn:hover{
+     background-color: #002863;
+     border: 1px solid #002863;
+     color: #ffffff;
+}
+
+ section.btn> a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #002863;
+    transform: skew(30deg, 0deg)
+}
+section.btn> a:hover{
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+}
+.text> p{
+    padding: 10px 20px;
+    line-height: 1.5;
+    color: #254ca1;
+}
+span.teacher{
+    /* padding:0px 500px ; */
+    margin-bottom: 50px;
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+span.teacher >img{
+    border: 1px solid #254ca1;
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    margin: 0 auto;
+    outline: 1px solid red;
+    margin-top: 15px;
+}
+
+.teachertext >p{
+    border: 1px solid #002863;
+    width: 400px;
+    padding:40px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #254ca1;
+    outline: 1px solid red;
+}
+
+@media screen and (max-width:320px){
+    span.text{
+        /* background-color: tomato; */
+        width: 96%;
+    }
+    span.teachertext>p{
+        /* background-color: teal; */
+        width: 96%;
+    }
+
+}
