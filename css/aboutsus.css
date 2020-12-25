@@ -9,7 +9,7 @@
 }
 
 .content{
-    border: 1px solid #002863;
+    /* border: 1px solid #002863; */
     background-color: #F2EEE6;
     width: 100%;
     margin: 0 auto;
@@ -52,7 +52,7 @@ h4{
 
 .about > p,.locallist>p{
     font-size: 18px;
-    border: 1px solid rebeccapurple;
+    /* border: 1px solid rebeccapurple; */
 }
 
 .about, .local{
@@ -66,12 +66,12 @@ h4{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 1px solid darkcyan;
+    /* border: 1px solid darkcyan; */
 }
 
 
 .locallist,.adimg{
-    border: 1px solid forestgreen;
+    /* border: 1px solid forestgreen; */
     width: 500px;
 }   
 
@@ -85,12 +85,12 @@ h5{
     color: #ffffff;
     font-size: 30px;
     padding: 12px 0px;
-    border: 1px solid springgreen;
+    /* border: 1px solid springgreen; */
 }
 
 
 .textblock{
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink; */
     background-color: #F2EEE6;
     /* width: 100%; */
     display: flex;
@@ -98,7 +98,7 @@ h5{
     
 }
 .form{
-    border: 1px solid navy;
+    /* border: 1px solid navy; */
     background-color: #F2EEE6;
     
 } 

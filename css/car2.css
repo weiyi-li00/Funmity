@@ -1,35 +1,86 @@
-.calendarimg >img{
-    width: 60%;
+.img1>img{
+    width: 45%;
 }
 
 .calendarimg >p{
-    transform: translateX(140px);
+    /* transform: translateX(140px); */
     font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .calendarimg{
-    transform: translateX(120px);
+    /* transform: translateX(120px); */
     margin: 0;
 }
 
 .checkbtn{
     /* border: 1px solid goldenrod; */
     display: flex;
-    flex-direction: column;
-    margin: 20px auto;
+     width: 100%;
+     justify-content: center;
 }
-.checkbtn> p{
+.checktime> p{
     text-align: center;
     font-size: 20px;
 }
-
-.wrap{
+.checktime ,{
+    border: 1px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img1{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    min-width: 1200px;
 }
+.right{
+    border: 2px solid #002863;
+}
+
+
 .content{
-    width: 1200px;
+    background-color:#f2eee6;
+    /* width:1200px; */
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
+.left , .right{
+    width: 50%;
+}
+@media screen and (max-width:768px) and (min-width:320px){
+    .content{
+        /* background-color: darkgoldenrod; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .left , .right{
+        width: 100%;
+    }
+    .text{
+        /* border: 1px solid darkmagenta; */
+        padding: 35px;
+    }
+    
+}
+@media screen and (max-width:817px) and (min-width:320px){
+    .checktime{
+        /* background-color: grey; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .time1 >button,.time2 >button{
+        /* width: 50%; */
+        margin: 5px 3px;
+    }
+}
+
+
 .time1,{
     margin: 10px;
 }
@@ -37,6 +88,7 @@
     border: none;
     color: #002863;
     padding: 10px 5px;
+    width: 30%;
     
 }
 .time1 >button:hover,.time2>button:hover{

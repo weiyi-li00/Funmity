@@ -9,17 +9,13 @@ nav >.n1{
 }
 
 .imgblock8{
-   /* border: 1px solid khaki; */
+   /* border: 3px solid darkcyan; */
    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
    font-size: 0;
 }
 
-
-.imglist >img{
-    /* border: 1px solid springgreen; */
-    width: 100%;
-    /* margin-bottom: 20px; */
-}
 
 .imglist{
     width: 25%;
@@ -68,7 +64,7 @@ h4{
 }
 
 span.courselist{
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -76,6 +72,9 @@ span.courselist{
     /* width: 1000px; */
     
     /* min-width: 1200px; */
+}
+span#img1,span#img2,span#img3,span#img4,span#img5,span#img6,span#img7,span#img8{
+    display: flex;
 }
 @media screen and (max-width:1018px) and (min-width:767px){   
     span.courselist{
@@ -109,6 +108,7 @@ span.courselist{
         margin-bottom: 20px;
         
     }
+    
     span.text{
         width: 100px;
         padding: none;
@@ -124,18 +124,16 @@ span.courselist{
 @media screen and (max-width:576px){
     span.text{
         padding: none;
-        outline: 1px solid yellow;
+        /* outline: 1px solid yellow; */
     }
     span.courselist{
         /* background-color: steelblue; */
         width: 100%;
-    }
+    } */
 }
-#img1>img,#img2>img,#img3>img,#img4>img,#img5>img,#img6>img,#img7>img,#img8>img{
-    /* border: 1px solid #002863; */
-    width: 50%;
-    display: flex;
-    justify-content: center;
+.imglist>a>img{
+    /* border: 1px solid red; */
+    width: 100%;
     
 }
 a > p{
@@ -155,6 +153,10 @@ a > p{
     /* height: 60px; */
 }
 
+#img1 > img,#img2 > img,#img3 > img,#img4 > img,#img5 > img,#img6 > img,#img7 > img,#img8 > img{
+    /* border: 1px solid hotpink; */
+    width: 55%;
+}
 span.text{
     border: 1px solid #002863;
     width: 400px;
@@ -176,6 +178,7 @@ p{
     display: flex;
     /* outline: 1px solid red; */
     margin-top: 10px;
+    justify-content: space-around;
 }
 
 section.btn{
@@ -187,26 +190,87 @@ section.btn{
     width: 100px;
     height: 45px;
     transform: skew(-30deg, 0deg);
-    margin: 0 auto;
+    /* margin: 0 auto; */
  }
- section.btn:hover{
-     background-color: #002863;
-     border: 1px solid #002863;
-     color: #ffffff;
+ section.btn1{
+    text-align: center;
+    border: 1px solid #002863;
+    background-color: #002863;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 45px;
+    transform: skew(-30deg, 0deg);
+    /* margin: 0 auto; */
+    
 }
 
- section.btn> a{
+section.btn:hover,section.btn1:hover{
+    animation-name: btn1;
+    animation-duration: 2s;
+}
+
+ section.btn> a,section.btn1> a{
     display: inline-block;
     text-decoration: none;
     text-align: center;
     color: #002863;
-    transform: skew(30deg, 0deg)
+    transform: skew(5deg, 0deg)
 }
-section.btn> a:hover{
+section.btn1> a{
+    color: #ffffff;
+}
+@keyframes btn{
+    0%{
+        /* transform: translateX(20%); */
+        /* transform: skew(-30deg, 0deg); */
+        margin-left: 20px;
+    }
+    25%{
+        /* transform: translateX(30%); */
+        /* transform: skew(-30deg, 0deg); */
+        margin-left: 25px;
+    }
+    50%{
+        /* transform: translateX(0); */
+        /* transform: skew(-30deg, 0deg); */
+        margin-left: 30px;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+@keyframes btn1{
+    0%{
+        transform: translateX(20%);
+        transform: skew(30deg, 0deg);
+        /* margin-left: 40px; */
+    }
+    25%{
+        transform: translateX(30%);
+        /* transform: skew(30deg, 0deg); */
+        /* margin-left: 50px; */
+        
+    }
+    50%{
+        transform: translateX(0);
+        /* transform: skew(30deg, 0deg); */
+        /* margin-left: 60px; */
+    }
+    100%{
+        margin-left: 0;
+        /* transform: skew(-30deg, 0deg); */
+    }
+}
+
+
+
+/* section.btn> a:hover{
     text-decoration: none;
     text-align: center;
     color: #ffffff;
-}
+     background-color: #002863; 
+} */
 .text> p{
     padding: 10px 20px;
     line-height: 1.5;
@@ -225,7 +289,7 @@ span.teacher >img{
     height: 200px;
     border-radius: 70%;
     margin: 0 auto;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin-top: 15px;
 }
 
@@ -236,7 +300,7 @@ span.teacher >img{
     margin: 0 auto;
     line-height: 1.5;
     color: #254ca1;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 @media screen and (max-width:320px){

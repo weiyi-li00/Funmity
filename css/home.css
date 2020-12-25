@@ -36,7 +36,7 @@ body{
 
  .newsblock1{ 
     display: inline-block;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* position: absolute;
     top: 120px;
     right: 100px;
@@ -44,7 +44,7 @@ body{
     width: 460px;
     float: right;
     display: inline-block;
-    margin: 30px 25px;
+    margin: 30px 20px;
     min-height: 100px;
     background-color: #F2EEE6;
     opacity: .9;
@@ -69,7 +69,7 @@ h3{
 }
 
 span.newsblock2{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 20px;
     color: #002863;
     padding: 10px;
@@ -107,6 +107,45 @@ span.newsblock2{
     transform: skew(-30deg, 0deg);
     transform-origin: 100% 0%;
 }
+@media screen and (max-width:768px){
+    section, #banner2{
+        width: 15%;
+    }
+}
+@media screen and (max-width:576px){
+    section, #banner2{
+        width: 20%;
+    }
+}
+@media screen and (max-width:320px){
+    section, #banner2{
+        width: 22%;
+    }
+    .newsblock1{
+        width: 90%;
+    }
+    .newsblock1>h3{
+        font-size: 30px;
+    }
+    .newsblock1>p{
+        font-size: 19px;
+    }
+    span.newsblock2{
+        width: 90% !important;
+        padding: 10px 20px !important;
+    }
+    section.btn{
+        margin: 0px -36px;
+    }
+    .title_text1,.title_text2, .title_text3, .title_text4{
+        width: 90% !important;
+    }
+    .title_border{
+        height: 400px !important;
+    }
+    
+}
+
 #banner2{
     width: 15pc;
     /* min-width: 1200px; */
@@ -119,9 +158,7 @@ section p, #banner2 p{
     margin: 30px 0px;
 }
 
-.color2{
-    
-}
+
 
  section:hover{
    text-decoration: none;
@@ -253,7 +290,7 @@ section.btn{
 }
 .sale_text1{
     font-size: 46px;
-    border: 1px solid firebrick;
+    /* border: 1px solid firebrick; */
     margin-right: 10px;
 } 
 .sale_text1>p{
@@ -290,11 +327,20 @@ section.btn{
     }
 
 }
+@media screen and (max-width:320px){
+    .sale_text1>p{
+        margin: 5px 0px;
+    }
+    .sale_text2{
+        width: 60% !important;
+        padding: 0 !important;
+    }
+}
 .sale_text2{
     font-size: 30px;
     width: 250px;
     padding: 0px 32px;
-    border: 1px solid firebrick;
+    /* border: 1px solid firebrick; */
     margin-right: 20px;
     
 }
@@ -364,15 +410,13 @@ h4.h4{
         justify-content: center;
     }
     .img4-2,.img1,.img2,.img3,.img4{
-        width: 50%;
+        /* width: 50%; */
         /* margin-right: 10px; */
     }
     .img1,.img2,.img3,.img4{
         margin-right: 20px;
     }
-    .img4-2{
-        padding-left: 50px;
-    }
+    
     .img4-2>.img2{
         width: 100%;
     }
@@ -397,8 +441,14 @@ h4.h4{
     height:250px;
     border-radius: 50%;
 }
+@media screen and (max-width:768px){
+    
+}
 main{
     /* min-width: 1200px; */
     position: relative;
     min-height: 120px;
+}
+.img_group{
+    /* outline: 1px solid red; */
 }

@@ -5,11 +5,14 @@
 
 .wrap{
     display: flex;
-    min-width: 1200px;
+    flex-wrap: wrap;
+    /* min-width: 1200px; */
     /* position: relative; */
 }
 
 .aside, .main{
+    display: flex;
+    flex-wrap: wrap;
     /* border: 1px solid green; */
     background-color: #F2EEE6;
     /* min-width: 300px; */
@@ -24,7 +27,10 @@
 .main{
     width: calc(100% - 520px);
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
+    background-color: #F2EEE6;
+    /* border: 1px solid #002863; */
+    /* position: relative; */
     min-width: 50px;
 }
 
@@ -41,11 +47,13 @@
 }
 
 .loginblock{
-    border: 1px;
+    border: 2px solid #003863;
     margin-left: 20px;
-    width: 500px;
-    padding: 0 82px;
-    position: absolute;
+    width: 60%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
 }
 
 .loginblock>p{
@@ -54,18 +62,18 @@
 }
 
 a> img{
-    width: 320px;
+    width: 100%;
 }
 .img12 >img, .img13 >img{
-    width: 30px;
+    width: 12%;
     margin: 10px;
     margin-left: 10px;
     margin-bottom: -10px;
 }
 
 .img12>input, .img13>input{
-    width: 250px;
-    height: 32px;
+    width: 70%;
+    
     margin: 10px;
 }
 
@@ -80,9 +88,8 @@ section.btn{
     transform: skew(-30deg, 0deg);
 }
 section.btn:hover{
-    background-color: #002863;
-    border: 1px solid #002863;
-    color: #ffffff;
+    animation-name: btn1;
+    animation-duration: 2s;
 }
  section a{
      display: inline-block;
@@ -93,14 +100,16 @@ section.btn:hover{
      transform: skew(30deg, 0deg);
  }
 
- section a:hover{
+ /* section a:hover{
     text-decoration: none;
     text-align: center;
     color: #ffffff;
-    font-style: normal;
- }
+    
+ } */
  .checkbtn{
-    margin: 50px 120px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .user{
@@ -113,6 +122,7 @@ section.btn:hover{
     min-width: 100px;
     position: absolute;
     right: 0;
+    display: none;
 }
 .user1>p , .user2>p{
     color: #ffffff;
@@ -133,4 +143,19 @@ input:hover{
     background-color: #002863;
     color: #ffffff;
     padding:6px;
+}
+@media screen and (max-width:992px){
+    .aside{
+        display: none;
+    }
+    .main{
+        /* border: 1px solid forestgreen; */
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:320px){
+    .loginblock{
+        width: 90%;
+    }
 }
